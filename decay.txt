@@ -1,0 +1,16 @@
+"decay"
+{
+	"base"			"sandbox"
+	"title"			"Decay"
+	"maps"			""
+	"menusystem"	"1"
+	"workshopid"	""
+
+	"settings"
+	{
+
+		// empty yet
+		
+	}
+
+}
