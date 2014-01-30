@@ -1,8 +1,11 @@
-
+AddCSLuaFile()
 DEFINE_BASECLASS( "player_default" )
 
 local PLAYER = {}
 
+PLAYER.WalkSpeed 			= 200
+PLAYER.RunSpeed				= 400
+PLAYER.AvoidPlayers			= false
 
 function PLAYER:Loadout()
 
@@ -17,6 +20,13 @@ function PLAYER:Loadout()
 	self.Player:SwitchToDefaultWeapon()
 
 end
+
+function PLAYER:SetModel()
+
+	BaseClass.SetModel( self )
+	
+end
+
 
 function PLAYER:Spawn()
 
