@@ -3,6 +3,8 @@
 
 DeriveGamemode("sandbox")
 
+
+-- overrides
 function GM:ContextMenuOpen()
 
 	GAMEMODE:SuppressHint( "OpeningContext" )
@@ -10,3 +12,9 @@ function GM:ContextMenuOpen()
 
 	return false
 end
+
+function GM:AddGamemodeToolMenuTabs( )
+	spawnmenu.AddToolTab( "Main", 		"#spawnmenu.tools_tab", "icon16/wrench.png" )
+end
+
+--

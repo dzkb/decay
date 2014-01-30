@@ -9,3 +9,11 @@ GM.Website = "http://dzakub.com"
 function GM:Initialize()
 
 end 
+
+-- overrides
+
+function GM:CanDrive( pl, ent )
+	return false
+end
+
+--
