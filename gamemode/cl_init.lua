@@ -1,6 +1,8 @@
 -- Decay by Dzakub
 -- cl_init.lua
 
+include("vgui/charactermenu.lua")
+
 DeriveGamemode("sandbox")
 
 
@@ -13,7 +15,7 @@ function GM:ContextMenuOpen()
 	return false
 end
 
-function GM:AddGamemodeToolMenuTabs( )
+function GM:AddGamemodeToolMenuTabs( ) -- this needs to be fixed
 	spawnmenu.AddToolTab( "Main", 		"#spawnmenu.tools_tab", "icon16/wrench.png" )
 end
 
@@ -22,7 +24,7 @@ end
 --------------
 function GM:PostDrawViewModel( vm, ply, weapon )
 
-  if ( weapon.UseHands || !weapon:IsScripted() ) then
+  if ( weapon.UseHands or (not weapon:IsScripted()) ) then
     local hands = LocalPlayer():GetHands()
     if ( IsValid( hands ) ) then hands:DrawModel() end
 
@@ -31,3 +33,7 @@ function GM:PostDrawViewModel( vm, ply, weapon )
 end
 
 --
+
+function GM:Initialize()
+	
+end 

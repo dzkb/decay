@@ -4,6 +4,7 @@
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "player_class/player_decay.lua" )
+AddCSLuaFile( "vgui/charactermenu.lua" )
 
 include( "shared.lua" )
 DeriveGamemode("sandbox")
