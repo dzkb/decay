@@ -18,7 +18,7 @@ sound.Add({
 
 function onKeyPress( ply, key )
 	if not harvesting then
-		if (key == IN_USE) then -- handles pressing E
+		if (key == IN_USE) and (not ply:KeyDown(IN_ATTACK)) then -- handles pressing E, restrict harvesting with physgun/guns shooting
 			local traceData = util.GetPlayerTrace(ply, ply:GetAimVector())
 			local result = util.TraceLine(traceData) -- tracing line to get material type (looking for ground suitable for harvesting)
 			local length = result.Fraction * 16384 -- fraction is the % of max 16k units that can be traced
