@@ -1,11 +1,18 @@
 -- Decay by Dzakub
 -- charactermenu.lua
+-- purpose: handles main character's menu
 
-local Form = vgui.Create( "DFrame" )
-Form:Center() -- Position form on your monitor
-Form:SetSize( 300, 150 ) -- Size form
-Form:SetTitle( "Panel postaci" ) -- Form set name
-Form:SetVisible( true ) -- Form rendered ( true or false )
-Form:SetDraggable( false ) -- Form draggable
-Form:ShowCloseButton( true ) -- Show buttons panel
-Form:MakePopup()
+function createCharacterMenu()
+
+	local Form = vgui.Create( "DFrame" )
+	Form:Center()
+	Form:SetSize( 600, 450 )
+	Form:SetTitle( "Panel postaci" )
+	Form:SetVisible( true )
+	Form:SetDraggable( true )
+	Form:ShowCloseButton( true )
+	Form:MakePopup()
+
+end
+
+concommand.Add("charactermenu", showCharacterMenu)

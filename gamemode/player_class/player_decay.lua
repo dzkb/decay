@@ -1,3 +1,7 @@
+-- Decay by Dzakub
+-- player_decay.lua
+-- purpose: players base class
+
 AddCSLuaFile()
 DEFINE_BASECLASS( "player_default" )
 

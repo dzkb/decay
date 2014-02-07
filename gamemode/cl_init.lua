@@ -1,6 +1,8 @@
 -- Decay by Dzakub
 -- cl_init.lua
+-- purpose: clientside init
 
+include("cl_harvesting.lua")
 include("vgui/charactermenu.lua")
 
 DeriveGamemode("sandbox")

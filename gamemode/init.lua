@@ -1,8 +1,12 @@
 -- Decay by Dzakub
 -- init.lua
+-- purpose: none (jk lol)
 
 AddCSLuaFile( "cl_init.lua" )
+AddCSLuaFile( "cl_harvesting.lua" )
+
 AddCSLuaFile( "shared.lua" )
+
 AddCSLuaFile( "player_class/player_decay.lua" )
 AddCSLuaFile( "vgui/charactermenu.lua" )
 

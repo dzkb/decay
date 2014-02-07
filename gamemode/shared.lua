@@ -1,5 +1,6 @@
 -- Decay by Dzakub
 -- shared.lua
+-- purpose: shared functions & basic GM info
 
 include( "player_class/player_decay.lua" )
 
