@@ -19,7 +19,7 @@ function PLAYER:Loadout()
 	self.Player:Give( "gmod_camera" )
 	self.Player:Give( "weapon_physgun" )
 	
-	self.Player:Give( "weapon_fists" )
+	-- self.Player:Give( "decay_fists" )
 
 	self.Player:SwitchToDefaultWeapon()
 

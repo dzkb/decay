@@ -22,7 +22,7 @@ function GM:PlayerSpawn(ply)
 	ply:Give( "gmod_tool" )
 	ply:Give( "gmod_camera" )
 	ply:Give( "weapon_physgun" )
-	ply:Give( "weapon_fists" )
+	ply:Give( "decay_fists" )
 	ply:SwitchToDefaultWeapon()
 
 	ply:SetModel('models/player/group01/male_07.mdl')
